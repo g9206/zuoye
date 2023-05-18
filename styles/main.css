@@ -1,0 +1,572 @@
+﻿#header
+{	/*.. 表示当前文件main.css的父目录*/
+	background:url(../images/headerbg.png);
+	height:105px;
+}
+
+#header .contentHeader
+{
+	width:990px;
+	margin:0 auto;
+	height:105px;
+	position:relative;//非static
+}
+
+#header .contentHeader .logo
+{
+	float: left;
+	margin-top: 20px;
+}
+
+#header .search
+{
+	left:250px;
+	position: absolute;
+	top:20px;
+}
+
+#header .search #inputSearch
+{
+	height: 25px;
+	width:217px;
+	border: 1px solid pink;
+	color:#CCCCCC;
+	padding-left:5px;
+	line-height: 25px;
+}
+
+#inputSeach .focus
+{
+	border:1px solid #00a5ff;
+}
+
+
+#skin
+{
+	width:120px;
+	float:right;
+	margin:10px;
+	padding:4px;
+	
+}
+
+
+#skin li
+{
+	float:left;
+	margin-right: 4px;
+	width:15px;
+	height:15px;
+	overflow: hidden;
+	display: block;
+	cursor: pointer;
+	background-image:url(../images/theme.gif);
+}
+
+#skin0{	background-position: 0px 0px;}
+#skin1{	background-position: 15px 0px;}
+#skin2{	background-position: 35px 0px;}
+#skin3{	background-position: 55px 0px;}
+#skin4{	background-position: 75px 0px;}
+#skin5{	background-position: 95px 0px;}
+
+#skin0.selected{background-position: 0px 15px;}
+#skin1.selected{background-position: 15px 15px;}
+#skin2.selected{background-position: 35px 15px;}
+#skin3.selected{background-position: 55px 15px;}
+#skin4.selected{background-position: 75px 15px;}
+#skin5.selected{background-position: 95px 15px;}
+
+
+.mainNav
+{
+	position: absolute;
+	top:68px;
+	left:0;
+	height:37px;
+	line-height: 37px;
+	background-color: lightcoral;
+	width:990px ;
+}
+
+
+.mainNav .nav
+{
+	display: inline;
+	float: left;
+	margin-left:25px;
+}
+
+
+.mainNav ul li
+{
+	float:left;
+	display: inline;
+	margin-right: 14px;
+	position:relative;
+}
+
+
+.mainNav ul li a
+{
+	color:white;
+	font-size: 14px;
+	display: block;
+	padding:0px 8px;
+}
+
+.mainNav ul li a:hover
+{
+	text-decoration: none;
+}
+
+.parentNav
+{
+	display: none;
+	background: #fff;
+	border:1px solid #b1b1b1;
+	border-top:0;
+	left:0;
+	position: absolute;
+    top:37px;	
+    width:474px;
+    z-index: 1002;
+}
+
+
+.parentNav .subItem
+{
+	float:left;
+	height:auto;
+	min-height: 100px;
+	padding:10px 12px;
+	width:470px;
+}
+
+
+.parentNav .subItem  dl
+{
+	float:left;
+	overflow: hidden;
+	padding:8px;
+	border-top: 1px dashed #c4c4c4;
+}
+
+
+
+
+.parentNav .subItem  dt
+{
+	float:left;
+	font-weight: bold;
+	line-height: 16px;
+	padding:4px 3px;
+	text-align: center;
+	width: 76px;
+}
+
+.parentNav .subItem  .fore
+{
+	padding-top:0;
+	border-top-style: none;
+}
+
+.parentNav .subItem  dt a
+{
+	padding:0;
+	color:#000;
+	font-weight: 700;
+	font-size:12px;
+}
+
+
+.parentNav .subItem  dd
+{
+	float:left;
+	padding:0;
+	overflow: hidden;
+	width: 364px;
+}
+
+.parentNav  .subItem em
+{
+	float:left;
+	margin:5px 0;
+	height:14px;
+	line-height: 14px;
+	padding:0 8px;
+	border-right: 1px solid #ccc;
+}
+
+.parentNav  .subItem  em a
+{
+	color:#000;
+	padding:0;
+	font-size:12px;
+	white-space: nowrap;
+}
+
+
+
+#content
+{
+	margin:0 auto;
+	width:990px;
+}
+
+.janeshop
+{
+	height:560px;
+	padding:10px 0px;
+	overflow: hidden;
+}
+
+#jnCatalog
+{
+	float:left;
+	height:560px;
+	margin:0px 11px 0 0px;
+	width:187px;
+}
+
+#mainContent
+{
+	height:560px;
+	float:left;
+	width:792px;
+}
+
+#jnCatalog h2
+{
+	height:30px;
+	line-height: 30px;
+	color:#fff;
+	font-size: 12px;
+	background-color: #6e6e6e;
+	text-indent: 13px;
+}
+
+
+.jnCatainfo
+{
+	border: 1px solid #6e6e6e;
+	height: 524px;
+	width:165px;
+	padding:5px 10px 0;
+	border-top:0;
+	overflow: hidden;
+}
+
+
+.jnCatainfo h3
+{
+	border-bottom: 1px solid #eee ;
+	height:24px;
+	line-height: 24px;
+	width: 164px;
+}
+
+
+.jnCatainfo ul
+{
+	float:left;
+	padding:0 2px 8px 
+}
+
+
+.jnCatainfo li
+{
+	float: left;
+	height: 24px;
+	width:79px;
+	color:#aeadae;
+	line-height: 24px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.jnCatainfo li a
+{
+	color:#444444;
+}
+
+
+.jnCatainfo li a:hover
+{
+	color:#008cd7;
+	text-decoration: none;
+}
+
+
+.jnCatainfo li .promoted
+{
+	color:#f9044e;
+}
+
+
+
+.jnCatainfo li .hot
+{
+	background: url(../images/hot.gif) no-repeat scroll 0 0 transparent;
+	height:16px;
+	position: absolute;
+	top:0;
+	width: 21px;
+}
+
+
+/*大屏广告*/
+#jnImageroll
+{
+	float:left;
+	height: 320px;
+	width:550px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 11px 0 0;
+}
+
+
+#jnImageroll img
+{
+	position: absolute;
+	left:0;
+	top:0;
+}
+
+
+
+#jnImageroll div
+{
+	bottom:0;
+	position: absolute;
+	overflow: hidden;
+	
+	
+}
+
+
+#jnImageroll div a
+{
+	background-color:pink;
+	color:#fff;
+	display: inline-block;
+	float: left;
+	height:32px;
+	margin-right: 1px;
+	overflow: hidden;
+	padding: 5px 15px ;
+	text-align: center;
+	width:79px;
+	
+}
+
+
+#jnImageroll div a:hover
+{
+	text-decoration: none;
+}
+
+
+#jnImageroll div a em
+{
+	cursor: pointer;
+	display: block;
+	height: 16px;
+	overflow: hidden;
+	widht:79px;
+}
+
+
+/*反白效果*/
+#jnImageroll a.chos 
+{
+	background: url("../images/adindex.gif") no-repeat center  39px  #37a7d7 ;
+	color:#fff;
+}
+
+
+/*最新动态*/
+#jnNotice
+{
+	float:left;
+	height:321px;
+	overflow: hidden;
+	width:230px;
+}
+
+#jnMiaosha
+{
+	float: left;
+	height:176px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	width:230px;
+}
+
+
+#jnNoticeInfo
+{
+	float: left;
+	height:133px;
+	overflow: hidden;
+	width:228px;
+	border: 1px solid #dfdfdf;
+}
+
+#jnNoticeInfo h2 {
+    height: 23px;
+    line-height: 23px;
+    border-bottom: 1px solid #DFDFDF;
+	text-indent:12px;
+}
+#jnNoticeInfo ul {
+    float: left;
+    padding: 6px 2px 0 12px;
+}
+#jnNoticeInfo li {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+#jnNoticeInfo li a{
+	color:#666666;
+}
+#jnNoticeInfo li a:hover{
+    color: #008CD7;
+    text-decoration: none;
+}
+
+/*品牌活动*/
+#jnBrand {
+    float: left;
+    height: 230px;
+    margin: 10px 0 0;
+    overflow: hidden;
+    width: 790px;
+}
+#jnBrandTab {
+    border-bottom: 1px solid #E4E4E4;
+    height: 29px;
+    position: relative;
+    width: 790px;
+    float: left;
+}
+#jnBrandTab h2 {
+    height: 29px;
+    line-height: 29px;
+    left: 0;
+    position: absolute;
+    width: 100px;
+}
+#jnBrandTab ul {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+#jnBrandTab li {
+    float: left;
+    margin: 0 10px 0 0;
+}
+#jnBrandTab li a {
+    background-color: #E4E4E4;
+    color: #000000;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+}
+#jnBrandTab .chos {
+    background: url("../images/chos.gif") no-repeat scroll 50% bottom transparent;
+    padding-bottom: 3px;
+}
+#jnBrandTab .chos a {
+    background-color: #FA5889;
+    color: #FFFFFF;
+    outline: 0 none;
+}
+#jnBrandContent {
+    float: left;
+    height: 188px;
+    overflow: hidden;
+    margin: 8px 5px;
+    width: 790px;
+	position: relative;
+}
+#jnBrandList {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3200px;
+}
+#jnBrandContent li {
+    float: left;
+    height: 188px;
+    overflow: hidden;
+    padding: 0 5px;
+    position: relative;
+    width: 185px;
+}
+#jnBrandContent li img {
+    left: 5px;
+    position: absolute;
+    top: 0;
+}
+#jnBrandContent li span {
+    background-color: #EFEFEF;
+    bottom: 0;
+    color: #666666;
+    display: inline-block;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    width: 183px;
+}
+#jnBrandContent li a {
+	color:#666666;
+}
+#jnBrandContent li a:hover{
+    color: #008CD7;
+    text-decoration: none;
+}
+
+
+/*footer*/
+#footer
+{
+	margin: 0 auto;
+	width:990px;
+	color:#666;
+	padding:18px 0;
+	text-align: center;
+}
+
+/**/
+.JS_css3 img
+{
+	-webkit-transition: 1s all;
+	transition: 1s all;
+}
+
+.JS_css3:hover img
+{
+	transform: rotate(720deg);
+	-webkit-transform: rotate(720deg);
+}
+
+
+
+#tooltip
+{
+	border:1px solid #333;
+	background: #f7f5d1;
+	padding:1px;
+	color:#333;
+	display:none;
+	position: absolute;
+	
+}
